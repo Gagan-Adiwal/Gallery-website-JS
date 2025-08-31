@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mountain Gallery - Classy Gallery</title>
+
+  <!-- Correct paths since this file is inside /gallerypages -->
+  <link rel="stylesheet" href="../css/styles.css">   <!-- Navbar & Footer -->
+  <link rel="stylesheet" href="../css/gallery.css"> <!-- Gallery-specific CSS -->
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="../index.html" class="logo">Classy<span>Gallery</span></a>
+      <nav id="menu">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="mountain.html" class="active">Mountain</a></li>
+          <li><a href="eagle.html">Eagle</a></li>
+          <li><a href="sunset.html">Sunset</a></li>
+          <li><a href="forest.html">Forest</a></li>
+          <li><a href="city.html">City</a></li>
+          <li><a href="desert.html">Desert</a></li>
+        </ul>
+      </nav>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">&#9776;</button>
+    </div>
+  </header>
+
+  <!-- Gallery Section -->
+  <main class="gallery-container">
+    <h1>Mountain Gallery</h1>
+
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <img src="https://picsum.photos/id/1011/800/600" alt="Snowy Peaks">
+        <div class="caption">Snowy Peaks</div>
+        <a href="https://picsum.photos/id/1011/1600/1200" download class="download-btn">Download</a>
+      </div>
+
+      <div class="gallery-item">
+        <img src="https://picsum.photos/id/1015/800/600" alt="Golden Sunrise">
+        <div class="caption">Golden Sunrise</div>
+        <a href="https://picsum.photos/id/1015/1600/1200" download class="download-btn">Download</a>
+      </div>
+
+      <div class="gallery-item">
+        <img src="https://picsum.photos/id/1022/800/600" alt="Misty Hills">
+        <div class="caption">Misty Hills</div>
+        <a href="https://picsum.photos/id/1022/1600/1200" download class="download-btn">Download</a>
+      </div>
+
+      <div class="gallery-item">
+        <img src="https://picsum.photos/id/1024/800/600" alt="Rocky Trail">
+        <div class="caption">Rocky Trail</div>
+        <a href="https://picsum.photos/id/1024/1600/1200" download class="download-btn">Download</a>
+      </div>
+
+      <div class="gallery-item">
+        <img src="https://picsum.photos/id/1032/800/600" alt="High Valley">
+        <div class="caption">High Valley</div>
+        <a href="https://picsum.photos/id/1032/1600/1200" download class="download-btn">Download</a>
+      </div>
+
+      <div class="gallery-item">
+        <img src="https://picsum.photos/id/1036/800/600" alt="Sharp Cliffs">
+        <div class="caption">Sharp Cliffs</div>
+        <a href="https://picsum.photos/id/1036/1600/1200" download class="download-btn">Download</a>
+      </div>
+
+      <div class="gallery-item">
+        <img src="https://picsum.photos/id/1042/800/600" alt="Cloudy Mountain">
+        <div class="caption">Cloudy Mountain</div>
+        <a href="https://picsum.photos/id/1042/1600/1200" download class="download-btn">Download</a>
+      </div>
+
+      <div class="gallery-item">
+        <img src="https://picsum.photos/id/1044/800/600" alt="Snow Range">
+        <div class="caption">Snow Range</div>
+        <a href="https://picsum.photos/id/1044/1600/1200" download class="download-btn">Download</a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Classy Gallery. All Rights Reserved.</p>
+      <div class="socials">
+        <a href="#">🌐</a>
+        <a href="#">📷</a>
+        <a href="#">💼</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Inline JS -->
+  <script>
+    (function () {
+      const toggle = document.getElementById('menu-toggle');
+      const menu = document.getElementById('menu');
+      toggle?.addEventListener('click', () => menu.classList.toggle('show'));
+      document.getElementById('year').textContent = new Date().getFullYear();
+    })();
+  </script>
+</body>
+</html>

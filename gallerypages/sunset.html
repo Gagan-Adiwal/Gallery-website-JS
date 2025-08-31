@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sunset Gallery - Classy Gallery</title>
+
+  <link rel="stylesheet" href="../css/styles.css">   <!-- Navbar & Footer -->
+  <link rel="stylesheet" href="../css/gallery.css">  <!-- Gallery-specific CSS -->
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="../index.html" class="logo">Classy<span>Gallery</span></a>
+      <nav id="menu">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="mountain.html">Mountain</a></li>
+          <li><a href="eagle.html">Eagle</a></li>
+          <li><a href="sunset.html" class="active">Sunset</a></li>
+          <li><a href="forest.html">Forest</a></li>
+          <li><a href="city.html">City</a></li>
+          <li><a href="desert.html">Desert</a></li>
+        </ul>
+      </nav>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">&#9776;</button>
+    </div>
+  </header>
+
+  <!-- Gallery Section -->
+  <main class="gallery-container">
+    <h1>Sunset Gallery</h1>
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <img src="https://picsum.photos/id/1003/800/600" alt="Golden Horizon">
+        <div class="caption">Golden Horizon</div>
+        <a href="https://picsum.photos/id/1003/1600/1200" download class="download-btn">Download</a>
+      </div>
+      <div class="gallery-item">
+        <img src="https://picsum.photos/id/1006/800/600" alt="Sunset Glow">
+        <div class="caption">Sunset Glow</div>
+        <a href="https://picsum.photos/id/1006/1600/1200" download class="download-btn">Download</a>
+      </div>
+      <div class="gallery-item">
+        <img src="https://picsum.photos/id/1016/800/600" alt="Evening Sky">
+        <div class="caption">Evening Sky</div>
+        <a href="https://picsum.photos/id/1016/1600/1200" download class="download-btn">Download</a>
+      </div>
+      <div class="gallery-item">
+        <img src="https://picsum.photos/id/1020/800/600" alt="Calm Sunset">
+        <div class="caption">Calm Sunset</div>
+        <a href="https://picsum.photos/id/1020/1600/1200" download class="download-btn">Download</a>
+      </div>
+      <div class="gallery-item">
+        <img src="https://picsum.photos/id/1031/800/600" alt="Burning Skies">
+        <div class="caption">Burning Skies</div>
+        <a href="https://picsum.photos/id/1031/1600/1200" download class="download-btn">Download</a>
+      </div>
+      <div class="gallery-item">
+        <img src="https://picsum.photos/id/1056/800/600" alt="Twilight Glow">
+        <div class="caption">Twilight Glow</div>
+        <a href="https://picsum.photos/id/1056/1600/1200" download class="download-btn">Download</a>
+      </div>
+      <div class="gallery-item">
+        <img src="https://picsum.photos/id/1067/800/600" alt="Sunset Over Lake">
+        <div class="caption">Sunset Over Lake</div>
+        <a href="https://picsum.photos/id/1067/1600/1200" download class="download-btn">Download</a>
+      </div>
+      <div class="gallery-item">
+        <img src="https://picsum.photos/id/1074/800/600" alt="Peaceful Sunset">
+        <div class="caption">Peaceful Sunset</div>
+        <a href="https://picsum.photos/id/1074/1600/1200" download class="download-btn">Download</a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Classy Gallery. All Rights Reserved.</p>
+      <div class="socials">
+        <a href="#">🌐</a>
+        <a href="#">📷</a>
+        <a href="#">💼</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script -->
+  <script>
+    (function () {
+      const toggle = document.getElementById('menu-toggle');
+      const menu = document.getElementById('menu');
+      toggle?.addEventListener('click', () => menu.classList.toggle('show'));
+      document.getElementById('year').textContent = new Date().getFullYear();
+    })();
+  </script>
+</body>
+</html>

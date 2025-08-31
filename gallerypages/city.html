@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>City Gallery - Classy Gallery</title>
+
+  <!-- Adjusting paths from gallerypages/ -->
+  <link rel="stylesheet" href="../css/styles.css">   <!-- Navbar & Footer -->
+  <link rel="stylesheet" href="../css/gallery.css">  <!-- Gallery-specific CSS -->
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="../index.html" class="logo">Classy<span>Gallery</span></a>
+      <nav id="menu">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="mountain.html">Mountain</a></li>
+          <li><a href="eagle.html">Eagle</a></li>
+          <li><a href="sunset.html">Sunset</a></li>
+          <li><a href="forest.html">Forest</a></li>
+          <li><a href="city.html" class="active">City</a></li>
+          <li><a href="desert.html">Desert</a></li>
+        </ul>
+      </nav>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">&#9776;</button>
+    </div>
+  </header>
+
+  <!-- Gallery Section -->
+  <main class="gallery-container">
+    <h1>City Gallery</h1>
+
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <img src="https://picsum.photos/id/1012/800/600" alt="Downtown Skyline">
+        <div class="caption">Downtown Skyline</div>
+        <a href="https://picsum.photos/id/1012/1600/1200" download class="download-btn">Download</a>
+      </div>
+      <div class="gallery-item">
+        <img src="https://picsum.photos/id/1016/800/600" alt="City Street">
+        <div class="caption">City Street</div>
+        <a href="https://picsum.photos/id/1016/1600/1200" download class="download-btn">Download</a>
+      </div>
+      <div class="gallery-item">
+        <img src="https://picsum.photos/id/1031/800/600" alt="City at Night">
+        <div class="caption">City at Night</div>
+        <a href="https://picsum.photos/id/1031/1600/1200" download class="download-btn">Download</a>
+      </div>
+      <div class="gallery-item">
+        <img src="https://picsum.photos/id/1043/800/600" alt="High-rise Towers">
+        <div class="caption">High-rise Towers</div>
+        <a href="https://picsum.photos/id/1043/1600/1200" download class="download-btn">Download</a>
+      </div>
+      <div class="gallery-item">
+        <img src="https://picsum.photos/id/1050/800/600" alt="Modern Architecture">
+        <div class="caption">Modern Architecture</div>
+        <a href="https://picsum.photos/id/1050/1600/1200" download class="download-btn">Download</a>
+      </div>
+      <div class="gallery-item">
+        <img src="https://picsum.photos/id/1062/800/600" alt="Busy Crosswalk">
+        <div class="caption">Busy Crosswalk</div>
+        <a href="https://picsum.photos/id/1062/1600/1200" download class="download-btn">Download</a>
+      </div>
+      <div class="gallery-item">
+        <img src="https://picsum.photos/id/1067/800/600" alt="Bridge and Cityscape">
+        <div class="caption">Bridge and Cityscape</div>
+        <a href="https://picsum.photos/id/1067/1600/1200" download class="download-btn">Download</a>
+      </div>
+      <div class="gallery-item">
+        <img src="https://picsum.photos/id/1074/800/600" alt="Old City Charm">
+        <div class="caption">Old City Charm</div>
+        <a href="https://picsum.photos/id/1074/1600/1200" download class="download-btn">Download</a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Classy Gallery. All Rights Reserved.</p>
+      <div class="socials">
+        <a href="#">🌐</a>
+        <a href="#">📷</a>
+        <a href="#">💼</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Inline JS -->
+  <script>
+    (function () {
+      const toggle = document.getElementById('menu-toggle');
+      const menu = document.getElementById('menu');
+      toggle?.addEventListener('click', () => menu.classList.toggle('show'));
+      document.getElementById('year').textContent = new Date().getFullYear();
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Desert Gallery - Classy Gallery</title>
+
+  <!-- Adjusting paths from gallerypages/ -->
+  <link rel="stylesheet" href="../css/styles.css">   <!-- Navbar & Footer -->
+  <link rel="stylesheet" href="../css/gallery.css">  <!-- Gallery-specific CSS -->
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="../index.html" class="logo">Classy<span>Gallery</span></a>
+      <nav id="menu">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="mountain.html">Mountain</a></li>
+          <li><a href="eagle.html">Eagle</a></li>
+          <li><a href="sunset.html">Sunset</a></li>
+          <li><a href="forest.html">Forest</a></li>
+          <li><a href="city.html">City</a></li>
+          <li><a href="desert.html" class="active">Desert</a></li>
+        </ul>
+      </nav>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">&#9776;</button>
+    </div>
+  </header>
+
+  <!-- Gallery Section -->
+  <main class="gallery-container">
+    <h1>Desert Gallery</h1>
+
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <img src="https://picsum.photos/id/1002/800/600" alt="Sandy Dunes">
+        <div class="caption">Sandy Dunes</div>
+        <a href="https://picsum.photos/id/1002/1600/1200" download class="download-btn">Download</a>
+      </div>
+      <div class="gallery-item">
+        <img src="https://picsum.photos/id/1003/800/600" alt="Desert Sunset">
+        <div class="caption">Desert Sunset</div>
+        <a href="https://picsum.photos/id/1003/1600/1200" download class="download-btn">Download</a>
+      </div>
+      <div class="gallery-item">
+        <img src="https://picsum.photos/id/1018/800/600" alt="Lonely Cactus">
+        <div class="caption">Lonely Cactus</div>
+        <a href="https://picsum.photos/id/1018/1600/1200" download class="download-btn">Download</a>
+      </div>
+      <div class="gallery-item">
+        <img src="https://picsum.photos/id/1035/800/600" alt="Golden Sands">
+        <div class="caption">Golden Sands</div>
+        <a href="https://picsum.photos/id/1035/1600/1200" download class="download-btn">Download</a>
+      </div>
+      <div class="gallery-item">
+        <img src="https://picsum.photos/id/1053/800/600" alt="Desert Mountains">
+        <div class="caption">Desert Mountains</div>
+        <a href="https://picsum.photos/id/1053/1600/1200" download class="download-btn">Download</a>
+      </div>
+      <div class="gallery-item">
+        <img src="https://picsum.photos/id/1068/800/600" alt="Dry Riverbed">
+        <div class="caption">Dry Riverbed</div>
+        <a href="https://picsum.photos/id/1068/1600/1200" download class="download-btn">Download</a>
+      </div>
+      <div class="gallery-item">
+        <img src="https://picsum.photos/id/1070/800/600" alt="Sandstorm Sky">
+        <div class="caption">Sandstorm Sky</div>
+        <a href="https://picsum.photos/id/1070/1600/1200" download class="download-btn">Download</a>
+      </div>
+      <div class="gallery-item">
+        <img src="https://picsum.photos/id/1084/800/600" alt="Desert Horizon">
+        <div class="caption">Desert Horizon</div>
+        <a href="https://picsum.photos/id/1084/1600/1200" download class="download-btn">Download</a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Classy Gallery. All Rights Reserved.</p>
+      <div class="socials">
+        <a href="#">🌐</a>
+        <a href="#">📷</a>
+        <a href="#">💼</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Inline JS -->
+  <script>
+    (function () {
+      const toggle = document.getElementById('menu-toggle');
+      const menu = document.getElementById('menu');
+      toggle?.addEventListener('click', () => menu.classList.toggle('show'));
+      document.getElementById('year').textContent = new Date().getFullYear();
+    })();
+  </script>
+</body>
+</html>

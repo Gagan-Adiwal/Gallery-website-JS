@@ -1,0 +1,86 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Gallery Container */
+.gallery-container {
+  padding: 80px 20px;
+  text-align: center;
+  background: #f9f9f9;
+  min-height: 100vh;
+}
+
+.gallery-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #222;
+  letter-spacing: 1px;
+}
+
+/* Grid Layout */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Gallery Item */
+.gallery-item {
+  background: #fff;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 12px;
+}
+
+/* Captions */
+.caption {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Download Button */
+.download-btn {
+  display: inline-block;
+  padding: 8px 16px;
+  font-size: 0.9rem;
+  background: #0077ff;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.download-btn:hover {
+  background: #0056b3;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .gallery-container h1 {
+    font-size: 2rem;
+  }
+  .gallery-item img {
+    height: 180px;
+  }
+}
