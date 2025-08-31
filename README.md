@@ -25,3 +25,18 @@ HTML5 – Structure
 CSS3 – Styling, Flexbox, Grid, Animations
 
 JavaScript (Vanilla) – Interactivity
+
+🎯 Future Improvements
+
+🔍 Add search & filter options
+
+🌙 Dark/Light mode toggle
+
+🖼️ Image modal viewer with zoom
+
+📷 Option to upload and manage images dynamically
+
+🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+Feel free to fork this repo and submit a pull request.
