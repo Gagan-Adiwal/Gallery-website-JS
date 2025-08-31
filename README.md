@@ -24,17 +24,17 @@ ClassyGallery is a clean and stylish gallery website designed to showcase images
 - **JavaScript (Vanilla)** – Interactivity  
 
 
-🎯 Future Improvements
+##🎯 Future Improvements
 
-🔍 Add search & filter options
+🔍 **Add search & filter options
 
-🌙 Dark/Light mode toggle
+🌙 **Dark/Light mode toggle
 
-🖼️ Image modal viewer with zoom
+🖼️ **Image modal viewer with zoom
 
 📷 Option to upload and manage images dynamically
 
-🤝 Contributing
+🤝 ##Contributing
 
 Contributions, issues, and feature requests are welcome!
 Feel free to fork this repo and submit a pull request.
